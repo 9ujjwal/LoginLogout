@@ -1,0 +1,63 @@
+<web-app>
+
+<context-param>
+	<param-name>dbdriver</param-name>
+	<param-value>com.mysql.jdbc.Driver</param-value>
+</context-param>                          
+
+<context-param>
+	<param-name>dbpath</param-name>
+	<param-value>jdbc:mysql://localhost:3306/userdb</param-value>
+</context-param>
+
+<context-param>
+	<param-name>dbid</param-name>
+	<param-value>root</param-value>
+</context-param>
+
+<context-param>
+	<param-name>dbpass</param-name>
+	<param-value>123</param-value>
+</context-param>
+
+<servlet>
+	<servlet-name>Profile</servlet-name>
+	<servlet-class>Profile</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Profile</servlet-name>
+	<url-pattern>/Profile</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Login</servlet-name>
+	<servlet-class>Login</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Login</servlet-name>
+	<url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Register</servlet-name>
+	<servlet-class>Register</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Register</servlet-name>
+	<url-pattern>/Register</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>Logout</servlet-name>
+	<servlet-class>Logout</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>Logout</servlet-name>
+	<url-pattern>/Logout</url-pattern>
+</servlet-mapping>
+
+</web-app>
